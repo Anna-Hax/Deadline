@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London Film School Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #ffffff;
+        }
+
+        /* Header styles */
+        .header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 0;
+        }
+
+        .header-image {
+            width: 100%;
+            height: 300px; /* Adjust this to control image size */
+        }
+
+        .header-logo {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Form container */
+        .form-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            border-radius: 10px;
+        }
+
+        /* Left section styles */
+        .form-left {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        /* Right form styles */
+        .form-right {
+            flex: 1;
+            padding-left: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #181b1f;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #35393e;
+        }
+
+
+        textarea {
+            width: 100%; /* Adjust width as needed */
+            height: 150px; /* Increased height */
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="pic.jpg" alt="Header Image" class="header-image">
+    </div>
+
+    <div class="form-container">
+        <div class="form-left">
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tell us why you want to apply:</label>
+                    <textarea id="message" name="message" placeholder=""></textarea>
+                </div>
+                
+            </form>
+        </div>
+
+        <div class="form-right">
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="file">Upload File:</label>
+                    <input type="file" id="file" name="file" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tell us about your story:</label>
+                    <textarea id="message" name="message" placeholder="The more personal the better."></textarea>
+                </div>
+                
+
+                <div class="form-group">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
+            
+        </div>
+    </div>
+    <script src="script_index.js"></script>
+</body>
+</html>
